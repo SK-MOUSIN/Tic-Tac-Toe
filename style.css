@@ -277,8 +277,8 @@ html, body {
     gap: 20px;
     }
     .boxes .box {
-        width: 55px;
-        height: 55px;
+        width: 20vw;
+        height: 8vh;
         font-size: 2rem;
         box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
     }
