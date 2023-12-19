@@ -58,9 +58,9 @@ function printingValues() {
                 isPlayerOne = true;
                 box.disabled = true;
             }
-            let iswinner = checkWinner();
             count++;
-            if(count===9 && !iswinner){
+            checkWinner();
+            if(count===9){
                 gameDraw();
             }
         })
@@ -90,6 +90,7 @@ function checkWinner() {
                 winnerNamePrint.style.display = "block";
                 resultAnnounce();
                 disableAllBox();
+                return;
             }
         }
     }
@@ -166,6 +167,8 @@ startBtnWorkAfterTakeInput();
 
 // Function to check for a draw
 function gameDraw(){
-    drawDiv.style.display = "block";
-    resultAnnounce();
+    if(winnerNamePrint.style.display !== "block"){
+        drawDiv.style.display = "block";
+        resultAnnounce();
+    }
 }
