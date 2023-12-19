@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+
+        <div id="heading">
+            <div class="game-heading">
+                <h1 class="headline">Let's Play Tic-Tac-Toe Game</h1>
+                <h1 class="winner"></h1>
+                <h1 class="draw">!! Game draw !!</h1>
+            </div>
+        </div>
+    
+        <div id="gameContainer">
+    
+            <div id="info">
+                    <h1 class="info-heading">Enter Player Name</h1>
+    
+                    <div class="playerContainer">
+                        <div class="player-info">
+                            <h2 id = "turnX">Player One:</h2>
+                            <input type="text" id="userNameFirst" name="userName" placeholder = "Enter Name..." required>
+                        </div>
+        
+                        <div class="player-info">
+                            <h2 id = "turnX">Player Two:</h2>
+                            <input type="text" id="userNameSecond" name="userName" placeholder = "Enter Name..." required>
+                        </div>
+                    </div>
+    
+                    <div class="btnContainer">
+                        <button class="switchOne switches">Start Game</button>
+                        <button class="switchTwo switches">Reset Game</button>
+                        <button class="switchThree switches">New Game</button>
+                    </div>
+            </div>
+
+            <div id="game">
+                    <div class="boxes">
+                        <button class="box"></button>
+                        <button class="box"></button>
+                        <button class="box"></button>
+                        <button class="box"></button>
+                        <button class="box"></button>
+                        <button class="box"></button>
+                        <button class="box"></button>
+                        <button class="box"></button>
+                        <button class="box"></button>
+                    </div>
+            </div>
+    
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
